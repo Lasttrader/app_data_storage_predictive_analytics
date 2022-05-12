@@ -7,7 +7,7 @@ BAUM Ai team 2021
 
 System description: the module of predictive analytics will be able to warn in advance, for a time interval defined by the user, about exceeding the set thresholds of parameters and potential failure of elements of the system, which will allow to take necessary measures to stabilize the equipment and replace the failing parts in advance. 
 
-
+```
 virtualenv -p <path to python>/bin/python3
 env_name
 
@@ -20,6 +20,7 @@ $ airflow initdb (airflow db init)
 $ airflow webserver -p 8080
 
 $ airflow scheduler
+```
 
 System installation:
 The module requires Python version 3.6+
