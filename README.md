@@ -24,14 +24,14 @@ $ airflow scheduler
 System installation:
 The module requires Python version 3.6+
 Installation of additional libraries to run the system:
-
+```
 $ pip install numpy
 $ pip install pandas
 $ pip install psycopg2-binary
 $ pip install tensorflow (version 2.0+)
 $ pip install apache-airflow
 $ pip install plotly
-
+```
 Third-party libraries used:
 Numpy - library for working with numeric and matrix data
 Pandas - library for work with structured data
@@ -46,17 +46,22 @@ ssh ... , password ...
 Setting up Apache Airflow:
 Move the shd_predict.py module to the airflow/dags folder 
 Airflow db init - initialize local database
-
+```
 $ airflow users create \
           --username admin \
           --firstname FIRST_NAME \
           --lastname LAST_NAME
           --role Admin \
           --E-mail admin@example.org - user creation
+
 $ airflow webserver --port 8080 - startup web server
+
 $ airflow scheduler (-D) - launches the scheduler (runs in the background)
+
 $ airflow dags list - checks for dags
+
 $ airflow dags unpause shd_predict - start dag
+```
 
 
 How the system works:
