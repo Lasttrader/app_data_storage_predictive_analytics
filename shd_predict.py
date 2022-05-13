@@ -310,8 +310,8 @@ def save_to_file(text_log, file_name, folder=FOLDER):
 
 def send_notification(bot_message):
     """Функция для отправки уведомлений в Телеграм"""
-    bot_token = '1577094629:AAHLZCWvvFxS1TV0h_1-cPP195psJBmyWPY'
-    bot_chatID = '-555640103'
+    bot_token = '___'
+    bot_chatID = '___'
 	#bot_chatID = '256804461'
     send_text = 'https://api.telegram.org/bot{}/sendMessage?chat_id={}&parse_mode=Markdown&text={}'.format(
         bot_token, bot_chatID, bot_message)
